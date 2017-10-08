@@ -25,28 +25,75 @@
 	    	.navbar-nav  li a:hover {
 	        color: #1abc9c !important;
 	    	}
+
+	    	.control-wrapper { margin: 20px 0px 0px 0px; }
+
+	    	.control-wrapper input, .control-wrapper textarea {
+	    		width:450px;
+	    	}
+
+	    	#submit { background-color: ; }
 	   </style>
 	</head>
 	<body>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="aboutme.html">ME</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-center">
-            <li><a href="Images.html">IMAGES</a></li>
-            <li><a href="videos.html">VIDEO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		    <!-- Navbar -->
+	    <nav class="navbar navbar-default">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>                        
+	          </button>
+	          <a class="navbar-brand" href="index.html">ME</a>
+	        </div>
+	        <div class="collapse navbar-collapse" id="myNavbar">
+	          <ul class="nav navbar-nav navbar-center">
+	            <li><a href="Images.html">IMAGES</a></li>
+	            <li><a href="videos.html">VIDEO</a></li>
+	            <li><a href="contact.html">CONTACT</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+	        <!-- Contact form -->
+        <div class="container">
+	       <div class="row">
+	       	<form name="contactform" method="post" action="send_form_email.php">
 
+
+	       	<div class="col-md-12 control-wrapper">
+			  <label for="first_name">First Name *</label><br/>
+
+			  <input  type="text" name="first_name" maxlength="50" size="30">
+			 </div>
+
+			 <div class="col-md-12 control-wrapper">
+			  <label for="last_name">Last Name *</label><br/>
+
+			  <input  type="text" name="last_name" maxlength="50" size="30">
+			  </div>
+			  <div class="col-md-12 control-wrapper">
+			  <label for="email">Email Address *</label><br/>
+
+			  <input  type="text" name="email" maxlength="80" size="30">
+			  </div>
+				<div class="col-md-12 control-wrapper">
+			  <label for="telephone">Telephone Number</label><br/>
+
+			  <input  type="text" name="telephone" maxlength="30" size="30">
+				</div>
+
+				<div class="col-md-12 control-wrapper">
+			  <label for="comments">Comments *</label><br/>
+
+			  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+			 </div>
+			<div class="col-md-12 control-wrapper">
+			  <input type="submit" value="Submit">   
+			  </div>
+			</form>
+	       </div>
+	   </div>
 	</body>
 </html>
